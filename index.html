@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/script.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+
+    <title>Jokes</title>
+</head>
+<body>
+    
+    <div class="topnav">
+        <img id="logo" class="logo" src="./images/logo.png">
+        <a id="btn-spooky" class="btn-nav" href="#">Spooky</a>
+        <a id="btn-pun" class="btn-nav" href="#">Pun</a>
+        <a id="btn-dark" class="btn-nav" href="#">Dark</a>
+        <a id="btn-miscellaneous" class="btn-nav" href="#">Miscellaneous</a>
+        <a id="btn-programming" class="btn-nav" href="#">Programming</a>
+        <a id="btn-christmas" class="btn-nav" href="#">Christmas</a>
+        <a id="btn-any" class="btn-nav active" href="#">All</a>
+    </div>
+
+
+    <div id="loading-box">
+        <img class="loading-gif" src="./images/fuuny-loader-loader.gif" alt="">
+    </div>
+    <div id="error-box">
+        <img class="error-gif" src="./images/error.gif" alt="">
+    </div>
+
+    <div class="main-container">
+
+        <div id="column1" class="column">
+            <!-- joke containers -->
+
+        </div>
+
+        <div id="column2" class="column">
+            <!-- joke containers -->
+        </div>
+    </div>
+    
+
+    <script> 
+          $(document).ready(function() {
+            loadJokes();
+
+            $("#logo").click(function() {
+                updateCategory("Any")
+                loadJokes();
+            });
+
+            $("#btn-spooky").click(function() {
+                updateCategory("Spooky")
+                loadJokes();
+            });
+
+            $("#btn-pun").click(function() {
+                updateCategory("Pun")
+                loadJokes();
+            });
+
+            $("#btn-dark").click(function() {
+                updateCategory("Dark")
+                loadJokes();
+            });
+
+            $("#btn-miscellaneous").click(function() {
+                updateCategory("Miscellaneous")
+                loadJokes();
+            });
+
+            $("#btn-programming").click(function() {
+                updateCategory("Programming")
+                loadJokes();
+            });
+
+            $("#btn-christmas").click(function() {
+                updateCategory("Christmas")
+                loadJokes();
+            });
+
+            $("#btn-any").click(function() {
+                updateCategory("Any")
+                loadJokes();
+            });
+
+          })
+    </script> 
+</body>
+</html>
+
+
+
+

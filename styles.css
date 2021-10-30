@@ -1,0 +1,176 @@
+/* 191A19 black*/
+/* 1E5128 green dark */
+/* 4E9F3D green */
+/* D8E9A8 light  */
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+  
+.topnav {
+    padding-right: 5px;
+    overflow: hidden;
+    background-color: #191A19;
+}
+
+.topnav .btn-nav {
+    float: right;
+    color: white;
+    text-align: center;
+    margin: 10px 0px 6px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.topnav a:hover {
+    background-color: #D8E9A8;
+    color: #191A19;
+}
+
+.topnav a.active {
+    background-color: #4E9F3D;
+    color: white;
+}
+
+.logo{
+    rotate: -5deg;
+    transition: transform .7s ease-in-out;
+    height: 30px;
+    padding: 18px 15px;
+    float:left;
+    cursor: pointer;  
+}
+
+
+.logo:hover{
+    transform: rotate(360deg) scale(1.2);
+}
+
+#loading-box{
+    display: none;
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #CCC;
+}
+
+.loading-gif{
+    width: auto;
+    height: 220px;
+}
+
+.column {
+    background-color:white;
+    float: left;
+    width: 50%;
+}
+
+
+.main-container{
+    margin:10px 10px;
+}
+
+.joke-container{
+    background-color: #D8E9A8;
+    position: relative;
+    padding: 5px;
+    margin: 5px;
+    border:#191A19 solid 3px ;
+}
+
+.joke-category{
+    padding: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 900;
+    color:#1E5128
+}
+
+.joke-type{
+    padding: 2px;
+    font-size: 15;
+    color:#4E9F3D;
+    margin-left: 10px;
+}
+.joke-text{
+    /* white-space: pre-line; */
+    padding: 4px 5px;
+}
+
+.joke-list{
+    margin: 8px;
+}
+
+.btn-joke-report{
+    margin-left: 350px;
+    padding: 8px 15px;
+    background-color: #191A19;
+    color: white;
+    border-radius: 5px;
+    border: 0px;
+}
+.btn-joke-report:hover{
+    background-color: #4E9F3D;
+    color: #191A19;
+}
+
+.tooltip .tooltiptext {
+    display:none;
+    width: 400px;
+    background-color: #191A19;
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 10px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    display:block;
+}
+
+.reported{
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+.dialog-report{
+    width: 200px;
+    height: 80px;
+    display: none;
+    background-color:white;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    text-align: center;
+    padding: 5px;
+    border: #1E5128 2px solid;
+}
+
+.btn-dialog{
+    margin: 5px 10px;
+}
+
+
+
+#error-box{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 44%;
+    background-color: #CCC;
+}
+
+.error-gif{
+    height: auto;
+    width: 200px;
+}
